@@ -1,0 +1,14 @@
+3
+stagenumber::1
+T::*»д€ по темному лесу, вы наткнулись на старый дом*
+T::-похоже, он заброшен
+choice1::зайти внутрь; nextscene::forestHouse
+choice2::пройти мимо; nextstage::forest::2
+
+stagenumber::2
+T::-похоже € заблудилс€
+choice1::идти дальше; stagenumber::forest::3
+
+stagenumber::3
+T::*¬ы умерли от голода*
+choice1::end; die

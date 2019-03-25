@@ -1,0 +1,32 @@
+6
+stagenumber::1
+T::*вы входите в лавку*
+T::Эх, еще один искатель сокровищ?
+choice1::Что за сокровища?; nextstage::traderHouse::2
+choice2::Знаешь где они расположены?; nextstage::traderHouse::3
+
+stagenumber::2
+T::О, так ты не знаешь? Обычно ко мне заходят, только чтобы разузнать 
+T::про них
+choice1::Можешь рассазать о них подробнее?;nextstage::traderHouse::4
+
+stagenumber::3
+T::Могу раскзать за небольшую плату
+choice1::дать денег (100);getmoney::-100 nextstage::traderHouse::5
+choice2::уйти к указателю;nextscene::ukazatel nextstage::traderHouse::6
+
+stagenumber::4
+T::Знаешь дом Томаса, здесь неподалеку? Говорят, его дед ограбил короля
+T::и спрятал у своего дома сундук с несметными богатствами
+choice1::Знаешь где они?; nextstage::traderHouse::3
+
+stagenumber::5
+T::говорят, на заднем дворе дома Томаса есть плита. Под ней скорее всего 
+T::спрятан клад, но тебе понадобится лопата, чтобы откапать его
+choice1::вернуться к указателю; nextstage::tomasHouse::3 nextscene::ukazatel
+
+stagenumber::6
+T::Снова ты? Решил узнать где находится клад?
+choice1::дать денег (100); getmoney::-100 nextstage::traderHouse::5 nextstage::tomasHouse::3
+choice2::уйти к указателю;nextscene::ukazatel nextstage::traderHouse::6
+

@@ -1,0 +1,26 @@
+5
+stagenumber::1
+T::на двери весит замок из 4 цифр
+choice1::попробовать взломать; enter::3535 nextstage::forestHouse::3
+choice2::обойти дом вокруг; nextstage::forestHouse::2
+
+stagenumber::2
+T::-О, записка, здесь написано 35*100 + 35
+choice1::вернуться ко входу; nextstage::forestHouse::1
+
+stagenumber::3
+T::*вы вошли в дом*
+T::*вы слышите скрип кровати в соседней комнате*
+T::-черт, кажется здесь кто то живет
+choice1::Проверить комнату; nextstage::forestHouse::4
+choice2::спрятаться в шкафу; nextstage::forestHouse::5
+
+stagenumber::4
+T::*перед вами выскочил огромный бугай и ударил вас по голове*
+choice1::end; die
+
+stagenumber::5
+T::*вы слышите шаги, седленно проходящие мимо вас*
+choice1::остаться; nextstage::forestHouse::4
+choice2::резко выбежать из дома; nextscene::ukazatel
+

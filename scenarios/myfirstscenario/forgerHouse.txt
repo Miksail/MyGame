@@ -1,0 +1,19 @@
+4
+stagenumber::1
+T::Кузнец: Приветствую тебя в моей кузнице, путник
+choice1::Сколько дашь за эту вещицу?; nextstage::forgerHouse::2
+choice2::Уйти к указателю; nextscene::ukazatel
+
+stagenumber::2
+T::200 гривен, не больше
+choice1::Cогласен; getmoney::200 nextstage::forgerHouse::3
+choice2::Уйти к указателю; nextscene::ukazatel nextstage::forgerHouse::1
+
+stagenumber::3
+T::Кузнец:Приветствую тебя в моей кузнице, путник
+choice1::Купить лопату (100); getmoney::-100 nextstage::forgerHouse::4 getitem::лопата
+choice2::Уйти к указателю; nextscene::ukazatel
+
+stagenumber::4
+T::Кузнец:Приветствую тебя в моей кузнице, путник
+choice1::Уйти к указателю; nextscene::ukazatel

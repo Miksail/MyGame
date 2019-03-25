@@ -1,0 +1,30 @@
+6
+stagenumber::1
+T::*вы подошли к дому “омаса*
+choice1::ѕостучатьс€ в дверь;nextstage::tomasHouse::2
+choice2::вурнутьс€ к указателю; nextscene::ukazatel
+
+stagenumber::2
+T::*ѕохоже, дома никого нет*
+choice1::¬ернутьс€ к указателю;nextstage::tomasHouse::1 nextscene::ukazatel
+
+stagenumber::3
+T::*вы подошли к дому “омаса*
+choice1::ѕостучатьс€ в дверь;nextstage::tomasHouse::4
+choice2::исследовать задний двор; nextstage::tomasHouse::5
+choice3::вурнутьс€ к указателю; nextscene::ukazatel
+
+stagenumber::4
+T::*ѕохоже, дома никого нет*
+choice1::¬ернутьс€ к указателю; nextstage::tomasHouse::3 nextscene::ukazatel
+choice2::исследовать задний двор; nextstage::tomasHouse::5
+
+stagenumber::5
+T::*вы находите плиту, о которой говорил торговец*
+choice1::вернутьс€ к дому; nextstage::tomasHouse::3
+choice2::вурнутьс€ к указателю; nextscene::ukazatel nextstage::tomasHouse::3
+choice3::выкопать клад; haveitems::лопата nextstage::tomasHouse::6
+
+stagenumber::6
+T::*¬ы нашли клад, теперь вы сказочно богат!*
+choice1::end; end

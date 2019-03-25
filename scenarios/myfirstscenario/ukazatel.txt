@@ -1,0 +1,9 @@
+1
+stagenumber::1
+T::*вы пришли к указателю. На нем 3 вывески:*
+T::*Дом кузнеца направо*
+T::*Дом торговца прямо*
+T::*Дом Томаса налево*
+choice1::Пойти налево;nextscene::tomasHouse
+choice2::Пойти прямо;nextscene::traderHouse
+choice3::Пойти направо;nextscene::forgerHouse
