@@ -7,7 +7,7 @@ choice2::пройти мимо; nextstage::forest::2
 
 stagenumber::2
 T::-похоже € заблудилс€
-choice1::идти дальше; stagenumber::forest::3
+choice1::идти дальше; nextstage::forest::3
 
 stagenumber::3
 T::*¬ы умерли от голода*
