@@ -12,3 +12,4 @@ choice1::идти дальше; nextstage::forest::3
 stagenumber::3
 T::*Вы умерли от голода*
 choice1::end; die
+
