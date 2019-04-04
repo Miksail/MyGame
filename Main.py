@@ -7,12 +7,46 @@ pygame.init()
 window_width = 1280
 window_high = 720
 
+# pygame.mixer.music.set_volume(1)
+# pygame.mixer.music.load('Test.mp3')
+# pygame.mixer.music.play()
+
 window = pygame.display.set_mode((window_width, window_high))
 pygame.display.set_caption('Quest')
 
 pygame.font.init()
 font_size = 23
 mainFont = pygame.font.Font('fonts/15353.ttf', font_size)
+
+
+class Game:
+    def __init__(self):
+        self.scenario_name = 0
+
+    def play(self):
+        global current_Scene, scenario_name, run_game, additional_time
+        global player, player_name, start_time, run, need_load
+        run_menu = True
+        run_game = True
+        while run_menu:
+            Scene.AllScenes = []
+            need_load = True
+            additional_time = 0
+            player = Player('')
+            welcome_menu.menu()
+            if need_load:
+                player_name = graphic_input("ENTER YOUR NAME:")
+                player = Player(player_name)
+                scenario_name = 'myfirstscenario'
+                current_Scene = Scene('startScene', scenario_name)
+            # scenario_name = graphic_input("ENTER SCENARIO NAME:")
+            run_game = True
+            start_time = time.time()
+            while run_game:
+                current_Scene = current_Scene.get_stage()
+                for e in pygame.event.get():
+                    if e.type == pygame.QUIT:
+                        run = False
 
 
 class Menu:
@@ -184,7 +218,6 @@ class Stage:
             if i.split('::')[0].startswith('enter'):
                 code = graphic_input('Enter:')
                 if not code == i.split('::')[1]:
-                    print_window('Wrong answer')
                     break
 
         for i in items_to_delete:
@@ -481,26 +514,7 @@ welcome_options = [(window_width/2 - 100, window_high / 5 * 1, 'New Game',
                    (71, 74, 81), (255, 255, 255), 2, 'Exit')]
 welcome_menu = Menu(welcome_options)
 
-scenario_name = 'myfirstscenario'
-current_Scene = Scene('startScene', scenario_name)
-run_menu = True
-run_game = True
-while run_menu:
-    Scene.AllScenes = []
-    need_load = True
-    additional_time = 0
-    player = Player
-    welcome_menu.menu()
-    if need_load:
-        player_name = graphic_input("ENTER YOUR NAME:")
-        player = Player(player_name)
-        scenario_name = 'myfirstscenario'
-        current_Scene = Scene('startScene', scenario_name)
-    # scenario_name = graphic_input("ENTER SCENARIO NAME:")
-    run_game = True
-    start_time = time.time()
-    while run_game:
-        current_Scene = current_Scene.get_stage()
-        for e in pygame.event.get():
-            if e.type == pygame.QUIT:
-                run = False
+
+game = Game()
+
+game.play()
