@@ -1,19 +1,19 @@
 4
 stagenumber::1
-T::Кузнец: Приветствую тебя в моей кузнице, путник
-choice1::Сколько дашь за эту вещицу?; nextstage::forgerHouse::2
-choice2::Уйти к указателю; nextscene::ukazatel
+T::РљСѓР·РЅРµС†: РџСЂРёРІРµС‚СЃС‚РІСѓСЋ С‚РµР±СЏ РІ РјРѕРµР№ РєСѓР·РЅРёС†Рµ, РїСѓС‚РЅРёРє
+choice1::РЎРєРѕР»СЊРєРѕ РґР°С€СЊ Р·Р° СЌС‚Сѓ РІРµС‰РёС†Сѓ?; nextstage::forgerHouse::2
+choice2::РЈР№С‚Рё Рє СѓРєР°Р·Р°С‚РµР»СЋ; nextscene::ukazatel
 
 stagenumber::2
-T::200 гривен, не больше
-choice1::Cогласен; getmoney::200 nextstage::forgerHouse::3
-choice2::Уйти к указателю; nextscene::ukazatel nextstage::forgerHouse::1
+T::200 РіСЂРёРІРµРЅ, РЅРµ Р±РѕР»СЊС€Рµ
+choice1::CРѕРіР»Р°СЃРµРЅ; getmoney::200 nextstage::forgerHouse::3
+choice2::РЈР№С‚Рё Рє СѓРєР°Р·Р°С‚РµР»СЋ; nextscene::ukazatel nextstage::forgerHouse::1
 
 stagenumber::3
-T::Кузнец:Приветствую тебя в моей кузнице, путник
-choice1::Купить лопату (100); getmoney::-100 nextstage::forgerHouse::4 getitem::лопата
-choice2::Уйти к указателю; nextscene::ukazatel
+T::РљСѓР·РЅРµС†:РџСЂРёРІРµС‚СЃС‚РІСѓСЋ С‚РµР±СЏ РІ РјРѕРµР№ РєСѓР·РЅРёС†Рµ, РїСѓС‚РЅРёРє
+choice1::РљСѓРїРёС‚СЊ Р»РѕРїР°С‚Сѓ (100); getmoney::-100 nextstage::forgerHouse::4 getitem::Р»РѕРїР°С‚Р°
+choice2::РЈР№С‚Рё Рє СѓРєР°Р·Р°С‚РµР»СЋ; nextscene::ukazatel
 
 stagenumber::4
-T::Кузнец:Приветствую тебя в моей кузнице, путник
-choice1::Уйти к указателю; nextscene::ukazatel
+T::РљСѓР·РЅРµС†:РџСЂРёРІРµС‚СЃС‚РІСѓСЋ С‚РµР±СЏ РІ РјРѕРµР№ РєСѓР·РЅРёС†Рµ, РїСѓС‚РЅРёРє
+choice1::РЈР№С‚Рё Рє СѓРєР°Р·Р°С‚РµР»СЋ; nextscene::ukazatel
