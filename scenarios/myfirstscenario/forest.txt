@@ -1,14 +1,14 @@
 3
 stagenumber::1
-T::*Èäÿ ïî òåìíîìó ëåñó, âû íàòêíóëèñü íà ñòàðûé äîì*
-T::-ïîõîæå, îí çàáðîøåí
-choice1::çàéòè âíóòðü; nextscene::forestHouse
-choice2::ïðîéòè ìèìî; nextstage::forest::2
+T::*Идя по темному лесу, вы наткнулись на старый дом*
+T::-похоже, он заброшен
+choice1::зайти внутрь; nextscene::forestHouse
+choice2::пройти мимо; nextstage::forest::2
 
 stagenumber::2
-T::-ïîõîæå ÿ çàáëóäèëñÿ
-choice1::èäòè äàëüøå; nextstage::forest::3
+T::-похоже я заблудился
+choice1::идти дальше; nextstage::forest::3
 
 stagenumber::3
-T::*Âû óìåðëè îò ãîëîäà*
+T::*Вы умерли от голода*
 choice1::end; die
