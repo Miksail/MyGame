@@ -1,0 +1,13 @@
+myfirstscenario
+Miksa
+15
+100
+ukazatel::1
+лопата;
+startScene::4
+startScene::4
+ukazatel::1
+ukazatel::1
+tomasHouse::1
+tomasHouse::1
+forgerHouse::4
