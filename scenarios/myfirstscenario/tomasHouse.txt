@@ -1,30 +1,30 @@
 6
 stagenumber::1
-T::*вы подошли к дому Томаса*
-choice1::Постучаться в дверь;nextstage::tomasHouse::2
-choice2::вурнуться к указателю; nextscene::ukazatel
+T::*РІС‹ РїРѕРґРѕС€Р»Рё Рє РґРѕРјСѓ РўРѕРјР°СЃР°*
+choice1::РџРѕСЃС‚СѓС‡Р°С‚СЊСЃСЏ РІ РґРІРµСЂСЊ;nextstage::tomasHouse::2
+choice2::РІСѓСЂРЅСѓС‚СЊСЃСЏ Рє СѓРєР°Р·Р°С‚РµР»СЋ; nextscene::ukazatel
 
 stagenumber::2
-T::*Похоже, дома никого нет*
-choice1::Вернуться к указателю;nextstage::tomasHouse::1 nextscene::ukazatel
+T::*РџРѕС…РѕР¶Рµ, РґРѕРјР° РЅРёРєРѕРіРѕ РЅРµС‚*
+choice1::Р’РµСЂРЅСѓС‚СЊСЃСЏ Рє СѓРєР°Р·Р°С‚РµР»СЋ;nextstage::tomasHouse::1 nextscene::ukazatel
 
 stagenumber::3
-T::*вы подошли к дому Томаса*
-choice1::Постучаться в дверь;nextstage::tomasHouse::4
-choice2::исследовать задний двор; nextstage::tomasHouse::5
-choice3::вурнуться к указателю; nextscene::ukazatel
+T::*РІС‹ РїРѕРґРѕС€Р»Рё Рє РґРѕРјСѓ РўРѕРјР°СЃР°*
+choice1::РџРѕСЃС‚СѓС‡Р°С‚СЊСЃСЏ РІ РґРІРµСЂСЊ;nextstage::tomasHouse::4
+choice2::РёСЃСЃР»РµРґРѕРІР°С‚СЊ Р·Р°РґРЅРёР№ РґРІРѕСЂ; nextstage::tomasHouse::5
+choice3::РІСѓСЂРЅСѓС‚СЊСЃСЏ Рє СѓРєР°Р·Р°С‚РµР»СЋ; nextscene::ukazatel
 
 stagenumber::4
-T::*Похоже, дома никого нет*
-choice1::Вернуться к указателю; nextstage::tomasHouse::3 nextscene::ukazatel
-choice2::исследовать задний двор; nextstage::tomasHouse::5
+T::*РџРѕС…РѕР¶Рµ, РґРѕРјР° РЅРёРєРѕРіРѕ РЅРµС‚*
+choice1::Р’РµСЂРЅСѓС‚СЊСЃСЏ Рє СѓРєР°Р·Р°С‚РµР»СЋ; nextstage::tomasHouse::3 nextscene::ukazatel
+choice2::РёСЃСЃР»РµРґРѕРІР°С‚СЊ Р·Р°РґРЅРёР№ РґРІРѕСЂ; nextstage::tomasHouse::5
 
 stagenumber::5
-T::*вы находите плиту, о которой говорил торговец*
-choice1::вернуться к дому; nextstage::tomasHouse::3
-choice2::вурнуться к указателю; nextscene::ukazatel nextstage::tomasHouse::3
-choice3::выкопать клад; haveitems::лопата nextstage::tomasHouse::6
+T::*РІС‹ РЅР°С…РѕРґРёС‚Рµ РїР»РёС‚Сѓ, Рѕ РєРѕС‚РѕСЂРѕР№ РіРѕРІРѕСЂРёР» С‚РѕСЂРіРѕРІРµС†*
+choice1::РІРµСЂРЅСѓС‚СЊСЃСЏ Рє РґРѕРјСѓ; nextstage::tomasHouse::3
+choice2::РІСѓСЂРЅСѓС‚СЊСЃСЏ Рє СѓРєР°Р·Р°С‚РµР»СЋ; nextscene::ukazatel nextstage::tomasHouse::3
+choice3::РІС‹РєРѕРїР°С‚СЊ РєР»Р°Рґ; haveitems::Р»РѕРїР°С‚Р° nextstage::tomasHouse::6
 
 stagenumber::6
-T::*Вы нашли клад, теперь вы сказочно богат!*
+T::*Р’С‹ РЅР°С€Р»Рё РєР»Р°Рґ, С‚РµРїРµСЂСЊ РІС‹ СЃРєР°Р·РѕС‡РЅРѕ Р±РѕРіР°С‚!*
 choice1::end; end
