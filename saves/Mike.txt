@@ -1,0 +1,9 @@
+myfirstscenario
+kek
+3
+0
+tomasHouse::1
+
+startScene::4
+ukazatel::1
+tomasHouse::1
