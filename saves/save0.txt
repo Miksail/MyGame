@@ -1,0 +1,8 @@
+myfirstscenario
+Unknown
+15
+0
+ukazatel::1
+
+startScene::4
+ukazatel::1
