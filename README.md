@@ -1,17 +1,17 @@
 # MyGame
 
-Текстовый квест
+Text Quest
 
-## Управление 
+## Control
 
-* стрелка вверх/вниз - выбор пункта
-* Enter - подтвердить выбор
-* esc - вызов меню
-* I - открыть/закрыть инвентарь
+* arrow up/down - point selection
+* Enter - choose point
+* esc - menu
+* I - open/close inventory
 
-## Возможности
+## Opportunities
 
-Save/Load - сохранение игры в папку saves, загрузка сохранения из папки saves
+Save/Load - save game in floder saves, load save file from folder saves
 
-Подключение своего сценария
+Connect your own scenario
 
